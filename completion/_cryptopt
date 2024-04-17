@@ -68,6 +68,8 @@ case "$state" in
   			'poly1305[p=2^130 - 5;                         Unsaturated Solinas]' \
   			'secp256k1_montgomery[p=2^256 - 2^32 - 977;                Wbw Montgomery]' \
   			'secp256k1_dettman[p=2^256 - 4294968273;                Unsaturated Dettman]' \
+  			'pluto_montgomery[p=102211695604070082112571065507755096754575920209623522239390234855490679834276115250716018318118556227909439196474813090886893187366913;                Wbw Montgomery]' \
+
 		;;
     framepointeroptions)
         _values 'framepointer' \

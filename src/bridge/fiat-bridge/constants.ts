@@ -35,6 +35,7 @@ export const AVAILABLE_CURVES = [
   "poly1305",
   "secp256k1_montgomery",
   "secp256k1_dettman",
+  "pluto_montgomery",
 ] as const;
 export const AVAILABLE_METHODS = ["square", "mul" /* currently unsupported "mul2", , "add", "sub"*/] as const;
 
@@ -254,5 +255,14 @@ export const CURVE_DETAILS: {
       "0x1ffffffffffffe",
       "0x1fffffffffffe",
     ],
+  },
+
+  // /tmp/pluto
+  pluto_montgomery: {
+    argwidth: 7,
+    bitwidth: 64,
+    prime: "102211695604070082112571065507755096754575920209623522239390234855490679834276115250716018318118556227909439196474813090886893187366913",
+    binary: BINS.wbw_montgomery,
+    bounds: ["0xffffffffffffffff", "0xffffffffffffffff", "0xffffffffffffffff", "0xffffffffffffffff", "0xffffffffffffffff", "0xffffffffffffffff", "0xffffffffffffffff"],
   },
 };

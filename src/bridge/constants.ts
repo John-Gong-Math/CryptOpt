@@ -55,6 +55,9 @@ export const KNOWN_SYMBOLS: {
   fiat_secp256k1_montgomery_square: { bridge: "fiat", method: "square", curve: "secp256k1_montgomery" },
   fiat_secp256k1_dettman_mul: { bridge: "fiat", method: "mul", curve: "secp256k1_dettman" },
   fiat_secp256k1_dettman_square: { bridge: "fiat", method: "square", curve: "secp256k1_dettman" },
+  fiat_pluto_montgomery_mul: { bridge: "fiat", method: "mul", curve: "pluto_montgomery" },
+  fiat_pluto_montgomery_square: { bridge: "fiat", method: "square", curve: "pluto_montgomery" },
+
 
   // bitcoin curve
   secp256k1_fe_mul_inner: { bridge: "bitcoin-core", method: "mul", curve: "secp256k1_dettman" },
